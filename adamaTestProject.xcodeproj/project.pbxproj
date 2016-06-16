@@ -8,15 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B7A5CA8EF04A6A9E9863B4AB /* libPods-adamaTestProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B789EE5100EBB859D595AE4 /* libPods-adamaTestProject.a */; };
+		CDA74F8E1D1073E9001A3E3D /* KSPrepsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA74F8D1D1073E9001A3E3D /* KSPrepsViewController.m */; };
+		CDA74F941D1074C4001A3E3D /* KSPrepsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA74F931D1074C4001A3E3D /* KSPrepsDetailViewController.m */; };
+		CDA74F971D1076F4001A3E3D /* KSPreparations.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA74F961D1076F4001A3E3D /* KSPreparations.m */; };
+		CDA74F9D1D10800A001A3E3D /* KSPrepsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA74F9C1D10800A001A3E3D /* KSPrepsTableViewCell.m */; };
+		CDA74F9F1D1084A3001A3E3D /* database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CDA74F9E1D1084A3001A3E3D /* database.sqlite */; };
+		CDA74FA31D10BBD8001A3E3D /* KSPreparationsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA74FA21D10BBD8001A3E3D /* KSPreparationsDetail.m */; };
+		CDA74FA71D119639001A3E3D /* KSPrepsDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA74FA61D119639001A3E3D /* KSPrepsDetailTableViewCell.m */; };
+		CDA74FAA1D120CB2001A3E3D /* KSHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA74FA91D120CB2001A3E3D /* KSHeaderTableViewCell.m */; };
+		CDA74FAE1D121A6E001A3E3D /* KSDownloadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA74FAD1D121A6E001A3E3D /* KSDownloadHelper.m */; };
 		CDEE3DAF1D10261F0005C8A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEE3DAE1D10261F0005C8A2 /* main.m */; };
 		CDEE3DB21D10261F0005C8A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEE3DB11D10261F0005C8A2 /* AppDelegate.m */; };
 		CDEE3DBA1D10261F0005C8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEE3DB91D10261F0005C8A2 /* Assets.xcassets */; };
-		CDEE3DD91D103CF90005C8A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEE3DD81D103CF90005C8A2 /* ViewController.m */; };
 		CDEE3DDF1D103D240005C8A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEE3DDB1D103D240005C8A2 /* LaunchScreen.storyboard */; };
 		CDEE3DE01D103D240005C8A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEE3DDD1D103D240005C8A2 /* Main.storyboard */; };
 		CDEE3DE61D10432B0005C8A2 /* KSDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEE3DE51D10432B0005C8A2 /* KSDatabaseManager.m */; };
 		CDEE3DEA1D10438E0005C8A2 /* KSDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEE3DE91D10438E0005C8A2 /* KSDispatch.m */; };
-		CDEE3DEE1D1069280005C8A2 /* database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CDEE3DED1D1062340005C8A2 /* database.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,23 @@
 		34550A4D662E775EE3EFC36F /* Pods-adamaTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adamaTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-adamaTestProject/Pods-adamaTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		665E9BF42C2B77968652B0D1 /* Pods-adamaTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adamaTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-adamaTestProject/Pods-adamaTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		7B789EE5100EBB859D595AE4 /* libPods-adamaTestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-adamaTestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA74F8C1D1073E9001A3E3D /* KSPrepsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPrepsViewController.h; sourceTree = "<group>"; };
+		CDA74F8D1D1073E9001A3E3D /* KSPrepsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPrepsViewController.m; sourceTree = "<group>"; };
+		CDA74F921D1074C4001A3E3D /* KSPrepsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPrepsDetailViewController.h; sourceTree = "<group>"; };
+		CDA74F931D1074C4001A3E3D /* KSPrepsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPrepsDetailViewController.m; sourceTree = "<group>"; };
+		CDA74F951D1076F4001A3E3D /* KSPreparations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPreparations.h; sourceTree = "<group>"; };
+		CDA74F961D1076F4001A3E3D /* KSPreparations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPreparations.m; sourceTree = "<group>"; };
+		CDA74F9B1D10800A001A3E3D /* KSPrepsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPrepsTableViewCell.h; sourceTree = "<group>"; };
+		CDA74F9C1D10800A001A3E3D /* KSPrepsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPrepsTableViewCell.m; sourceTree = "<group>"; };
+		CDA74F9E1D1084A3001A3E3D /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = database.sqlite; path = ../../adamaTestProject/database.sqlite; sourceTree = "<group>"; };
+		CDA74FA11D10BBD8001A3E3D /* KSPreparationsDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPreparationsDetail.h; sourceTree = "<group>"; };
+		CDA74FA21D10BBD8001A3E3D /* KSPreparationsDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPreparationsDetail.m; sourceTree = "<group>"; };
+		CDA74FA51D119639001A3E3D /* KSPrepsDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPrepsDetailTableViewCell.h; sourceTree = "<group>"; };
+		CDA74FA61D119639001A3E3D /* KSPrepsDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPrepsDetailTableViewCell.m; sourceTree = "<group>"; };
+		CDA74FA81D120CB2001A3E3D /* KSHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSHeaderTableViewCell.h; sourceTree = "<group>"; };
+		CDA74FA91D120CB2001A3E3D /* KSHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSHeaderTableViewCell.m; sourceTree = "<group>"; };
+		CDA74FAC1D121A6E001A3E3D /* KSDownloadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDownloadHelper.h; sourceTree = "<group>"; };
+		CDA74FAD1D121A6E001A3E3D /* KSDownloadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSDownloadHelper.m; sourceTree = "<group>"; };
 		CDEE3DAA1D10261F0005C8A2 /* adamaTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adamaTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEE3DAE1D10261F0005C8A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDEE3DB01D10261F0005C8A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,8 +64,6 @@
 		CDEE3DB91D10261F0005C8A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDEE3DBE1D10261F0005C8A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDEE3DC31D10261F0005C8A2 /* adamaTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adamaTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDEE3DD71D103CF90005C8A2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CDEE3DD81D103CF90005C8A2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CDEE3DDC1D103D240005C8A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDEE3DDE1D103D240005C8A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDEE3DE41D10432B0005C8A2 /* KSDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDatabaseManager.h; sourceTree = "<group>"; };
@@ -49,7 +71,6 @@
 		CDEE3DE81D10438E0005C8A2 /* KSDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDispatch.h; sourceTree = "<group>"; };
 		CDEE3DE91D10438E0005C8A2 /* KSDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSDispatch.m; sourceTree = "<group>"; };
 		CDEE3DEC1D1045650005C8A2 /* KSMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMacro.h; sourceTree = "<group>"; };
-		CDEE3DED1D1062340005C8A2 /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +109,105 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CDA74F8A1D1073E9001A3E3D /* KSPrepsDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CDA74F921D1074C4001A3E3D /* KSPrepsDetailViewController.h */,
+				CDA74F931D1074C4001A3E3D /* KSPrepsDetailViewController.m */,
+			);
+			path = KSPrepsDetailViewController;
+			sourceTree = "<group>";
+		};
+		CDA74F8B1D1073E9001A3E3D /* KSPrepsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CDA74F8C1D1073E9001A3E3D /* KSPrepsViewController.h */,
+				CDA74F8D1D1073E9001A3E3D /* KSPrepsViewController.m */,
+			);
+			path = KSPrepsViewController;
+			sourceTree = "<group>";
+		};
+		CDA74F8F1D107494001A3E3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDA74F901D107494001A3E3D /* KSPreparations */,
+				CDA74F911D107494001A3E3D /* KSPreparationsDetail */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDA74F901D107494001A3E3D /* KSPreparations */ = {
+			isa = PBXGroup;
+			children = (
+				CDA74F951D1076F4001A3E3D /* KSPreparations.h */,
+				CDA74F961D1076F4001A3E3D /* KSPreparations.m */,
+			);
+			path = KSPreparations;
+			sourceTree = "<group>";
+		};
+		CDA74F911D107494001A3E3D /* KSPreparationsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CDA74FA11D10BBD8001A3E3D /* KSPreparationsDetail.h */,
+				CDA74FA21D10BBD8001A3E3D /* KSPreparationsDetail.m */,
+			);
+			path = KSPreparationsDetail;
+			sourceTree = "<group>";
+		};
+		CDA74F991D107FE9001A3E3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDA74FA41D11961A001A3E3D /* KSPrepsDetailTableViewCell */,
+				CDA74F9A1D107FE9001A3E3D /* KSPrepsTableViewCell */,
+				CDA74FA81D120CB2001A3E3D /* KSHeaderTableViewCell.h */,
+				CDA74FA91D120CB2001A3E3D /* KSHeaderTableViewCell.m */,
+			);
+			name = Views;
+			path = Source/Views;
+			sourceTree = "<group>";
+		};
+		CDA74F9A1D107FE9001A3E3D /* KSPrepsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CDA74F9B1D10800A001A3E3D /* KSPrepsTableViewCell.h */,
+				CDA74F9C1D10800A001A3E3D /* KSPrepsTableViewCell.m */,
+			);
+			path = KSPrepsTableViewCell;
+			sourceTree = "<group>";
+		};
+		CDA74FA01D1084BC001A3E3D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CDA74F9E1D1084A3001A3E3D /* database.sqlite */,
+			);
+			name = Data;
+			path = Source/Data;
+			sourceTree = "<group>";
+		};
+		CDA74FA41D11961A001A3E3D /* KSPrepsDetailTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CDA74FA51D119639001A3E3D /* KSPrepsDetailTableViewCell.h */,
+				CDA74FA61D119639001A3E3D /* KSPrepsDetailTableViewCell.m */,
+			);
+			path = KSPrepsDetailTableViewCell;
+			sourceTree = "<group>";
+		};
+		CDA74FAB1D121A56001A3E3D /* KSDownloadHelper */ = {
+			isa = PBXGroup;
+			children = (
+				CDA74FAC1D121A6E001A3E3D /* KSDownloadHelper.h */,
+				CDA74FAD1D121A6E001A3E3D /* KSDownloadHelper.m */,
+			);
+			path = KSDownloadHelper;
+			sourceTree = "<group>";
+		};
 		CDEE3DA11D10261E0005C8A2 = {
 			isa = PBXGroup;
 			children = (
 				CDEE3DD21D103CA50005C8A2 /* Source */,
+				CDA74F991D107FE9001A3E3D /* Views */,
+				CDA74FA01D1084BC001A3E3D /* Data */,
 				CDEE3DE11D10430D0005C8A2 /* Library */,
 				CDEE3DAC1D10261F0005C8A2 /* adamaTestProject */,
 				CDEE3DAB1D10261F0005C8A2 /* Products */,
@@ -132,26 +248,18 @@
 		CDEE3DD21D103CA50005C8A2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CDA74F8F1D107494001A3E3D /* Models */,
 				CDEE3DDA1D103D240005C8A2 /* Interfaces */,
 				CDEE3DD61D103CF90005C8A2 /* ViewControllers */,
-				CDEE3DD31D103CB70005C8A2 /* Data */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		CDEE3DD31D103CB70005C8A2 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				CDEE3DED1D1062340005C8A2 /* database.sqlite */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		CDEE3DD61D103CF90005C8A2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CDEE3DD71D103CF90005C8A2 /* ViewController.h */,
-				CDEE3DD81D103CF90005C8A2 /* ViewController.m */,
+				CDA74F8A1D1073E9001A3E3D /* KSPrepsDetailViewController */,
+				CDA74F8B1D1073E9001A3E3D /* KSPrepsViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -178,6 +286,7 @@
 		CDEE3DE21D10430D0005C8A2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CDA74FAB1D121A56001A3E3D /* KSDownloadHelper */,
 				CDEE3DE71D10438E0005C8A2 /* KSDispatch */,
 				CDEE3DE31D10430D0005C8A2 /* KSDatabaseManager */,
 			);
@@ -293,7 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDEE3DEE1D1069280005C8A2 /* database.sqlite in Resources */,
+				CDA74F9F1D1084A3001A3E3D /* database.sqlite in Resources */,
 				CDEE3DE01D103D240005C8A2 /* Main.storyboard in Resources */,
 				CDEE3DDF1D103D240005C8A2 /* LaunchScreen.storyboard in Resources */,
 				CDEE3DBA1D10261F0005C8A2 /* Assets.xcassets in Resources */,
@@ -362,11 +471,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA74FA31D10BBD8001A3E3D /* KSPreparationsDetail.m in Sources */,
+				CDA74F941D1074C4001A3E3D /* KSPrepsDetailViewController.m in Sources */,
 				CDEE3DEA1D10438E0005C8A2 /* KSDispatch.m in Sources */,
+				CDA74F971D1076F4001A3E3D /* KSPreparations.m in Sources */,
+				CDA74F8E1D1073E9001A3E3D /* KSPrepsViewController.m in Sources */,
+				CDA74F9D1D10800A001A3E3D /* KSPrepsTableViewCell.m in Sources */,
 				CDEE3DE61D10432B0005C8A2 /* KSDatabaseManager.m in Sources */,
 				CDEE3DB21D10261F0005C8A2 /* AppDelegate.m in Sources */,
-				CDEE3DD91D103CF90005C8A2 /* ViewController.m in Sources */,
+				CDA74FAA1D120CB2001A3E3D /* KSHeaderTableViewCell.m in Sources */,
 				CDEE3DAF1D10261F0005C8A2 /* main.m in Sources */,
+				CDA74FA71D119639001A3E3D /* KSPrepsDetailTableViewCell.m in Sources */,
+				CDA74FAE1D121A6E001A3E3D /* KSDownloadHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
