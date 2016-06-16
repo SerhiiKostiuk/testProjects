@@ -10,14 +10,13 @@
 #import "KSDispatch.h"
 #import "KSMacro.h"
 #import "FMDB.h"
-
+#import "KSPreparations.h"
 
 KSConstString(kKSDatabaseFileName, @"database.sqlite");
 
 @implementation KSDatabaseManager
 
 static KSDatabaseManager *sharedDatabaseManager = nil;
-
 
 #pragma mark -
 #pragma mark Singleton
@@ -31,6 +30,29 @@ static KSDatabaseManager *sharedDatabaseManager = nil;
     return sharedDatabaseManager;
 }
 
+#pragma mark -
+#pragma mark Class Methods
+
++ (id)allocWithZone:(NSZone*)zone {
+    return [self sharedDatabaseManager];
+}
+
++ (NSMutableArray *)loadFromBaseWithQuery:(NSString *)query {
+    KSDatabaseManager *dbManager = [KSDatabaseManager sharedDatabaseManager];
+    NSMutableArray *mutableArray = [NSMutableArray array];
+    
+    FMResultSet *results = [dbManager performQuery:query];
+    while ([results next]) {
+        [mutableArray addObject:[[KSPreparations alloc] initWithFMDBSet:results]];
+    }
+    
+    return mutableArray;
+}
+
+
+#pragma mark -
+#pragma mark Initializations And Deallocations
+
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -39,18 +61,28 @@ static KSDatabaseManager *sharedDatabaseManager = nil;
     return self;
 }
 
+#pragma mark -
+#pragma mark Public
 
-+ (id)allocWithZone:(NSZone*)zone {
-    return [self sharedDatabaseManager];
+- (FMResultSet *)performQuery:(NSString *)query {
+    if ([self.database open]) {
+        FMResultSet *results = [self.database executeQuery:query];
+        return results;
+        
+    } else {
+        NSLog(@"Can't open the base");
+        return nil;
+    }
 }
+
+#pragma mark -
+#pragma mark Private
 
 - (id)copyWithZone:(NSZone *)zone {
     return self;
 }
 
-
 - (void)initializeDatabase {
-    
     NSArray *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [documentsPath objectAtIndex:0];
     
@@ -77,16 +109,6 @@ static KSDatabaseManager *sharedDatabaseManager = nil;
                 NSLog(@"%@", error.localizedDescription);
             }
         }
-    }
-}
-
-- (FMResultSet *)performQuery:(NSString *)query {
-    if ([self.database open]) {
-        FMResultSet *results = [self.database executeQuery:query];
-        return results;
-    } else {
-        NSLog(@"Can't open the base");
-        return nil;
     }
 }
 

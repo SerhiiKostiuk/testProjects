@@ -16,6 +16,8 @@
 
 +(instancetype)sharedDatabaseManager;
 
++ (NSMutableArray *)loadFromBaseWithQuery:(NSString *)query;
+
 - (FMResultSet *)performQuery:(NSString *)query;
 
 @end
