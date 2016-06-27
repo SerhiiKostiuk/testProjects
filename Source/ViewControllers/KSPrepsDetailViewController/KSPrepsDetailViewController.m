@@ -97,7 +97,7 @@ KSConstString(kKSCellIdentifier, @"KSPrepsDetailTableViewCell");
 
     } else {
     KSPrepsDetailTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:kKSCellIdentifier forIndexPath:indexPath];
-    KSPreparationsDetail  *preps = [self.prepsDetail objectAtIndex:indexPath.row];
+    KSPreparationsDetail  *preps = [self.prepsDetail objectAtIndex:indexPath.section];
     
     cell.prepInfoTextLabel.attributedText = preps.sectionText;
         return cell;

@@ -13,25 +13,6 @@
 
 @implementation KSPreparations
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-//        [self loadFromBase];
-    }
-    return self;
-}
-
-
-- (id)initWithDictionary:(NSDictionary *)dictionary {
-    self = [super init];
-    if (self) {
-        _title = [dictionary [@"prepname"] stringValue];
-        
-    }
-    
-    return self;
-}
-
 - (id)initWithFMDBSet:(FMResultSet *)set {
     self = [super init];
     if (self) {
@@ -43,27 +24,6 @@
     }
     
     return self;
-}
-
-- (void)loadFromBase {
-    KSDatabaseManager *dbmanager = [KSDatabaseManager sharedDatabaseManager];
-    
-    [dbmanager.database open];
-    
-    if (![dbmanager.database open]) {
-        NSLog(@"Could not open/create database");
-    }
-    
-    FMResultSet *results = [dbmanager performQuery:@"SELECT * FROM preps"];
-    while ([results next]) {
-        self.title = [results stringForColumn:@"prepname"];
-        self.prepsInfo = [results stringForColumn:@"about"];
-        self.imageName = [results stringForColumn:@"preppict"];
-
-        NSLog(@"%@", self.title);
-        NSLog(@"%@", self.prepsInfo);
-        NSLog(@"%@", self.imageName);
-    } ;
 }
 
 @end
